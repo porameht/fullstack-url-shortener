@@ -21,9 +21,11 @@ this project using
   ```
   1.1.1 Initialize project yarn init
 
-  1.1.2 Initialize TypeScript npx typescript --init
+  1.1.2 Initialize TypeScript
+    - npx typescript --init
     - yarn add express cors body-parser config mongoose yup nanoid
     - yarn add @types/express @types/cors @types/body-parser @types/config @types/mongoose @types/yup @types/nanoid @types/node typescript ts-node -D
+
   1.1.3 Create required files
 
   1.1.4 Setup nodemon
@@ -68,11 +70,12 @@ this project using
   _2.1 Booststrap react application_
 
   ```
-  2.1.1 create application -npx create-react-app ui --template typescript
+  2.1.1 create application
+    - npx create-react-app ui --template typescript
 
   2.1.2 cleanup files
 
-  2.1.3 install required packages - yarn add @chakra-ui/react axios
+  2.1.3 install required packages - yarn add @chakra-ui/react axios @emotion/react @emotion/styled framer-motion
 
   2.1.4 add configuration (server endpoint)
   ```

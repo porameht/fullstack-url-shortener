@@ -1,9 +1,9 @@
-import UrlShortenerForm from "./components/urlShortenerForm";
+import URLShortenerForm from "./components/urlShortenerForm";
 
 function App() {
   return (
     <div className="App">
-      <UrlShortenerForm />
+      <URLShortenerForm />
     </div>
   );
 }
