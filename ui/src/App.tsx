@@ -1,17 +1,19 @@
-import URLShortenerForm from "./components/urlShortenerForm";
-import Background from "./components/background";
-import { Box } from "@chakra-ui/react";
+import HomeContainer from "./containers/Home";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HandleRedirectContainer from "./containers/HandleRedirect";
+
 function App() {
   return (
-    <Box
-      height="100%"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-    >
-      <URLShortenerForm />
-      <Background />
-    </Box>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <HomeContainer />
+        </Route>
+        <Route exact path="/:shortId">
+          <HandleRedirectContainer />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
