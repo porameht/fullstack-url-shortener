@@ -6,14 +6,16 @@ RUN rm -rf build
 
 RUN cd /tmp && npm install -q
 
-# code base
+RUN npm dedupe
 
+# Code base
 ADD ./ /src
 RUN rm -rf /src/node_modules && cp -a /tmp/node_modules /src/
 
-# define working directory
+# Define working directory
 WORKDIR /src
 
 RUN npm run-script build
 
-CMD ["node","build/src/app.js"]
+CMD ["node", "build/src/app.js"]
+

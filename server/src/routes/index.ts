@@ -16,7 +16,9 @@ function routes(app: Express) {
   app.post("/api/url", validateResourse(shortUrlSchema), createShortUrl);
 
   app.get("/:shortId", handleRedirect);
+
   app.get("/api/url/:shortId", getShortUrl);
+
   app.get("/api/analytics", getAnalytics);
 }
 
