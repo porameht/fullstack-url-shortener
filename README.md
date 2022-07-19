@@ -1,36 +1,60 @@
 # fullstack-url-shortener
 
+    this project using
+    - typescript
+    - nodejs
+    - express
+    - reactjs
+    - mongodb
 
-*1.0 Setup application*
+    ***1. backend***
+    - restapi with express
+    - connect to a mongodb instance
+    - validate requests with yup
+    - containerize with docker
+    - build with typescript
 
-    1.1 Initialize project yarn init
+    _1.1 Setup application_
 
-    1.2 Initialize TypeScript npx typescript --init
+    1.1.1 Initialize project yarn init
 
-    1.3 Create required files
+    1.1.2 Initialize TypeScript npx typescript --init
 
-    1.4 Setup nodemon
+    1.1.3 Create required files
 
-    1.5 Install required packages
+    1.1.4 Setup nodemon
 
-    1.6 Setup config
+    1.1.5 Install required packages
 
-*2.0 Add create route*
+    1.1.6 Setup config
 
-    2.1 Add model
+    _1.2 Add create route_
 
-    2.2 Add route
+    1.2.1 Add model
 
-    2.3 Add controller
+    1.2.2 Add route
 
-*3.0 Add analytics*
+    1.2.3 Add controller
 
-    3.1 Create analytics model
+    _1.3 Add analytics_
 
-    3.2 Add to route
+    1.3.1 Create analytics model
 
-*4.0 Containerize with Docker*
+    1.3.2 Add to route
 
-    4.1 Add Dockerfile
+    _1.4 Containerize with Docker_
 
-    4.2 Add docker-compose
+    1.4.1 Add Dockerfile
+
+    1.4.2 Add docker-compose
+
+    ***2. fronend***
+    - bootstrap a react application with create react app
+    - make requests to the server with axios
+    - build with typescript
+
+    ***3. deployment***
+    - create a digitalocean droplet
+    - create the build scripts
+    - configure and ssl certificate
+    - configure nginx web server
