@@ -4,7 +4,6 @@ import { ShortURL } from "./shortUrl.model";
 interface Analytics extends Document {
   shortUrl: ShortURL;
 }
-
 const schema = new mongoose.Schema(
   {
     shortUrl: {
@@ -15,7 +14,5 @@ const schema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-
 const analytics = mongoose.model<Analytics>("analytics", schema);
-
 export default analytics;
