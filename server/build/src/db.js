@@ -54,7 +54,7 @@ function db() {
                     return [4 /*yield*/, mongoose_1.default
                             .connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
                             .then(function () {
-                            console.log("DB connected to MongoDB atlas");
+                            console.log("DB connected to " + dbUri);
                         })];
                 case 2:
                     _a.sent();
