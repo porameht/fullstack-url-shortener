@@ -65,6 +65,42 @@ this project using
 - make requests to the server with axios
 - build with typescript
 
+  _2.1 Booststrap react application_
+
+  ```
+  2.1.1 create application -npx create-react-app ui --template typescript
+
+  2.1.2 cleanup files
+
+  2.1.3 install required packages - yarn add @chakra-ui/react axios
+
+  2.1.4 add configuration (server endpoint)
+  ```
+
+  _2.2 Network request_
+
+  ```
+  2.2.1 make request to server
+
+  2.2.2 display new short URL
+  ```
+
+  _2.3 Fix backend bugs_
+
+  ```
+  2.3.1 validate destination as a url
+
+  2.3.2 enable cors
+  ```
+
+  _2.4 Background image_
+
+  ```
+  2.4.1 get the background image from unsplash
+
+  2.4.2 resize the image on window size change
+  ```
+
 **_3. deployment_**
 
 - create a digitalocean droplet
