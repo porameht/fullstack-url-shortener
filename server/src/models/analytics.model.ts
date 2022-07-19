@@ -14,5 +14,6 @@ const schema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
 const analytics = mongoose.model<Analytics>("analytics", schema);
 export default analytics;

@@ -7,7 +7,7 @@ async function db() {
     await mongoose
       .connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
       .then(() => {
-        console.log(`DB connected to ${dbUri}`);
+        console.log(`DB connected to MongoDB atlas`);
       });
   } catch (e) {
     console.error(e);

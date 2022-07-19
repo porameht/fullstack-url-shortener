@@ -22,7 +22,7 @@ export async function handleRedirect(req: Request, res: Response) {
   }
 
   analytics.create({ shortUrl: short._id });
-  
+
   return res.redirect(short.destination);
 }
 
