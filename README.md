@@ -59,7 +59,7 @@ this project using
   1.4.2 Add docker-compose
   ```
 
-**_2. fronend_**
+**_2. frontend_**
 
 - bootstrap a react application with create react app
 - make requests to the server with axios
