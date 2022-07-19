@@ -7,6 +7,7 @@ import db from "./db";
 
 const app = express();
 
+// enable Cross-Origin Resource Sharing
 app.use(
   cors({
     origin: config.get("corsOrigin"),
