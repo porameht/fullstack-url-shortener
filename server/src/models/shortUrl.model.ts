@@ -1,7 +1,7 @@
 import mongoose, { Document } from "mongoose";
 import { customAlphabet } from "nanoid";
 
-const nanoid = customAlphabet("abcdefghijklmnopqrstuv0987654321");
+const nanoid = customAlphabet("abcdefghijklmnopqrstuv0987654321", 6);
 
 export interface ShortURL extends Document {
   shortId: string;
@@ -19,4 +19,5 @@ const schema = new mongoose.Schema({
 });
 
 const shortUrl = mongoose.model<ShortURL>("shortUrl", schema);
+
 export default shortUrl;
