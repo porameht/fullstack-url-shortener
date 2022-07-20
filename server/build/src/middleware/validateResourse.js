@@ -36,28 +36,26 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var validateResource = function (resourceSchema) {
-    return function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
-        var e_1;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    _a.trys.push([0, 2, , 3]);
-                    return [4 /*yield*/, resourceSchema.validate({
-                            body: req.body,
-                            query: req.query,
-                            params: req.params,
-                        })];
-                case 1:
-                    _a.sent();
-                    next();
-                    return [3 /*break*/, 3];
-                case 2:
-                    e_1 = _a.sent();
-                    return [2 /*return*/, res.status(400).send(e_1)];
-                case 3: return [2 /*return*/];
-            }
-        });
-    }); };
-};
+var validateResource = function (resourceSchema) { return function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+    var e_1;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                _a.trys.push([0, 2, , 3]);
+                return [4 /*yield*/, resourceSchema.validate({
+                        body: req.body,
+                        query: req.query,
+                        params: req.params,
+                    })];
+            case 1:
+                _a.sent();
+                next();
+                return [3 /*break*/, 3];
+            case 2:
+                e_1 = _a.sent();
+                return [2 /*return*/, res.sendStatus(400)];
+            case 3: return [2 /*return*/];
+        }
+    });
+}); }; };
 exports.default = validateResource;

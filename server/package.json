@@ -4,18 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --config nodemon.json src/app.ts",
+    "dev": "nodemon --config nodemon.json src/app.ts",
     "build": "tsc"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "config": "^3.3.6",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.2",
     "nanoid": "^3.1.22",
-    "ts-node-dev": "^2.0.0",
     "yup": "^0.32.9"
   },
   "devDependencies": {
@@ -26,11 +25,7 @@
     "@types/nanoid": "^2.1.0",
     "@types/node": "^14.14.37",
     "@types/yup": "^0.29.11",
-    "ts-node": "^10.9.1",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
-  },
-  "engines": {
-    "node": "14.20.0",
-    "npm": "6.14.17"
   }
 }

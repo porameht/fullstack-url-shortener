@@ -39,7 +39,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getShortUrl = exports.getAnalytics = exports.handleRedirect = exports.createShortUrl = void 0;
+exports.getAnalytics = exports.handleRedirect = exports.createShortUrl = void 0;
 var shortUrl_model_1 = __importDefault(require("../models/shortUrl.model"));
 var analytics_model_1 = __importDefault(require("../models/analytics.model"));
 function createShortUrl(req, res) {
@@ -93,22 +93,3 @@ function getAnalytics(req, res) {
     });
 }
 exports.getAnalytics = getAnalytics;
-function getShortUrl(req, res) {
-    return __awaiter(this, void 0, void 0, function () {
-        var shortId, short;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    shortId = req.params.shortId;
-                    return [4 /*yield*/, shortUrl_model_1.default.findOne({ shortId: shortId }).lean()];
-                case 1:
-                    short = _a.sent();
-                    if (!short) {
-                        return [2 /*return*/, res.sendStatus(404)];
-                    }
-                    return [2 /*return*/, res.json(short)];
-            }
-        });
-    });
-}
-exports.getShortUrl = getShortUrl;

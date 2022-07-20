@@ -12,7 +12,6 @@ function routes(app) {
     });
     app.post("/api/url", validateResourse_1.default(createShortUrl_schema_1.default), shortUrl_controller_1.createShortUrl);
     app.get("/:shortId", shortUrl_controller_1.handleRedirect);
-    app.get("/api/url/:shortId", shortUrl_controller_1.getShortUrl);
     app.get("/api/analytics", shortUrl_controller_1.getAnalytics);
 }
 exports.default = routes;
