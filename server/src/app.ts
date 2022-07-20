@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: config.get("corsOrigin"),
+    origin: "https://fullstack-url-shortener.vercel.app/",
   })
 );
 
