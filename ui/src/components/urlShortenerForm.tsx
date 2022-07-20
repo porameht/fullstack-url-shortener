@@ -34,7 +34,7 @@ const URLShortenerForm = () => {
       </form>
       {shortUrl && (
         <a href={`/${shortUrl?.shortId}`}>
-          {window.location.origin}/{shortUrl?.shortId}
+          {destination}/{shortUrl?.shortId}
         </a>
       )}
     </Box>
